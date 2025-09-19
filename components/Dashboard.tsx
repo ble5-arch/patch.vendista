@@ -25,8 +25,8 @@ export const Dashboard: React.FC<DashboardProps> = ({ username, language, onLogo
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <DashboardCard title={t.terminals} icon={<TerminalIcon className="h-8 w-8 text-blue-500" />}>
-              <p className="text-3xl font-bold">{t.terminalsValue}</p>
-              <p className="text-sm text-gray-500">{t.terminalsDescription}</p>
+              <p className="text-3xl font-bold">{t.terminalsOnlineValue}</p>
+              <p className="text-sm text-gray-500">{t.terminalsDescriptionFormat.replace('{total}', t.terminalsTotalValue)}</p>
             </DashboardCard>
 
             <DashboardCard title={t.monitoring} icon={<ShieldIcon className="h-8 w-8 text-green-500" />}>
@@ -34,7 +34,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ username, language, onLogo
             </DashboardCard>
             
             <DashboardCard title={t.finances} icon={<WalletIcon className="h-8 w-8 text-indigo-500" />}>
-               <p className="text-2xl font-bold">{t.balanceValue}</p>
+               <p className="text-2xl font-bold">
+                 {language === 'en' ? t.balanceCurrency : ''}
+                 {t.balanceValue}
+                 {language === 'ru' ? ` ${t.balanceCurrency}` : ''}
+                </p>
             </DashboardCard>
 
             <DashboardCard title={t.events} icon={<BellIcon className="h-8 w-8 text-amber-500" />}>

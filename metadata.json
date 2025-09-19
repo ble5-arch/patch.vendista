@@ -1,6 +1,0 @@
-
-{
-  "name": "Vendista PWA",
-  "description": "A Progressive Web App for the Vendista platform, providing a seamless mobile experience for account management. This app can be installed on your homescreen and works offline.",
-  "requestFramePermissions": []
-}

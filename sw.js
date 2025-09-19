@@ -15,7 +15,7 @@ const urlsToCache = [
   '/patch.vendista/icon.svg',
   '/patch.vendista/manifest.json',
   'https://cdn.tailwindcss.com',
-  'https://picsum.photos/1920/1080?blur=5&random=1',
+  'https://picsum.photos/id/237/1920/1080?blur=5',
   'https://aistudiocdn.com/react@^19.1.1',
   'https://aistudiocdn.com/react-dom@^19.1.1/client.js'
 ];

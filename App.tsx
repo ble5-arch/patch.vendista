@@ -22,7 +22,7 @@ const App: React.FC = () => {
   return (
     <div 
       className={`relative min-h-screen w-full transition-all duration-500 ${!isLoggedIn ? 'bg-cover bg-center' : 'bg-gray-100'}`}
-      style={{ backgroundImage: !isLoggedIn ? "url('https://picsum.photos/1920/1080?blur=5&random=1')" : 'none' }}
+      style={{ backgroundImage: !isLoggedIn ? "url('https://picsum.photos/id/237/1920/1080?blur=5')" : 'none' }}
     >
       {!isLoggedIn ? (
         <>
